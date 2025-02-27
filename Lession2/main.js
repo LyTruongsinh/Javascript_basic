@@ -46,3 +46,15 @@ console.log(++a);
 // Việc 3: Trả về biến 'a copy'
 console.log(a++); // => 6;
 console.log(a); // => 7;
+
+let number = 6;
+let output = number++ + --number;
+// Viêc 1: Gọi number (number thời điểm 1)
+// Việc 2: number = number + 1
+// Việc 3: number = number - 1; (number thời điểm 2)
+// Việc 4: output = number thời điểm 1 + number thời điểm 2
+// Hay ouput = 6 + --(6+1) = 6 + ( 6 + 1 ) - 1 = 12
+console.log(output); // => 12
+let number1 = 6;
+let ouput1 = number1++ * 2 - --number1*2;
+console.log(ouput1)
