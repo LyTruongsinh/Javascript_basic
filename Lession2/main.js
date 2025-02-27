@@ -56,5 +56,5 @@ let output = number++ + --number;
 // Hay ouput = 6 + --(6+1) = 6 + ( 6 + 1 ) - 1 = 12
 console.log(output); // => 12
 let number1 = 6;
-let ouput1 = number1++ * 2 - --number1*2;
+let ouput1 = ++number1* 2 - number1--*2;
 console.log(ouput1)
